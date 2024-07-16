@@ -34,8 +34,7 @@ async function makeRsvpPost(data) {
     const response = await fetch(jekyll_globals.rsvp_post_address, {
         method: 'POST',
         headers: {
-        'Content-Type': 'application/json',
-        'X-Api-Key': jekyll_globals.api_key,
+            'Content-Type': 'text/plain;charset=utf-8',
         },
         redirect: 'follow', // manual, *follow, error
         body: JSON.stringify(data)
